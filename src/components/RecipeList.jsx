@@ -16,12 +16,13 @@ function RecipeList() {
         <div className="RecipePage">
             <div className="RecipeList">
                 {cook.map((recipe) => (
-                    <div key={recipe.id} className="Recipes">
-                        <img src={recipe.image} alt={recipe.name} />
-                        <div className="info">
+                    <div key={recipe.id} className="Recipe-card" style={{ backgroundImage: `url(${recipe.image})` }}>
                         <h3>{recipe.name}</h3>
-                        <p>{recipe.calories} calories</p>
-                        <button onClick={() => deleteRecipe(recipe.id)}>Delete</button>
+                       {/*  <img src={recipe.image} alt={recipe.name} /> */}
+                        <div className="Recipe-card-info">
+                        <p><strong>Calories: </strong>{recipe.calories} </p>
+                        <p><strong>Servings: </strong> {recipe.servings}</p>
+                        <button onClick={() => deleteRecipe(recipe.id)}>X</button>
                         </div> 
                     </div>
                 ))}
