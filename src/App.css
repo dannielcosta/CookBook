@@ -197,6 +197,7 @@ body{
 } 
 
 .About{
+  /* 
   display:flex;
   flex-direction: column;
   color:black;
@@ -204,6 +205,19 @@ body{
   justify-content: center;
   margin-left: 250px;
   margin-right: 250px;
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: black;  
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  padding: 40px;
+  text-align: center;
+  width: fit-content;
+  height: auto;
 }
 
 .AddNewRecipe{
@@ -243,4 +257,31 @@ body{
 .input-instructions .input-ingredients{
   width: 600px;
   
+}
+
+.NotFound-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;  
+  margin:auto;
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+  width: fit-content;
+  height: auto;
+}
+
+ .NotFound-container p{
+  color: black;
+  background-color: #FBC41B;
+  padding: 10px;
+  border: 1px solid #FBC41B;
+  border-radius: 10px;
+}
+
+.NotFound h3 {
+  color: black;
+  font-size: 50px;
 }

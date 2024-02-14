@@ -4,6 +4,7 @@ import React from "react";
 import RecipeList from "../components/RecipeList";
 import recipes from "../data/recipes.json";
 import { useState } from 'react';
+import AddRecipe from "../components/AddRecipe";
 
 
 // >>>>> Adicionar condicional rendering to the function.
@@ -24,11 +25,20 @@ function Dashboard(){
     const dessertRecipes = recipes.filter((recipe) => recipe.type === "dessert");
 
     return(
+        <section>
+         <div>
+          <h2>
+            Add a new recipe
+          </h2>
+          <AddRecipe/>
+        </div>
+
         <div>
             <h2>Starter Recipes</h2>
             <RecipeList recipes = {starterRecipes}></RecipeList>
         </div>
          
+        </section>
      /* 
        <div>
         {recipe.map((recipe) => {

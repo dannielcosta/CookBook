@@ -50,7 +50,7 @@ function AddRecipe(props) {
             <label>
                 Picture:
             </label>
-            <input type="file" name="img" value= {image} src= <AiOutlinePicture/> onChange={(e)=> setImage(e.target.value)}  />
+            <input type="file" name="img" value= {image}  onChange={(e)=> setImage(e.target.value)}  />
 
             <label>
                 Servings:
